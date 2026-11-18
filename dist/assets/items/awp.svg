@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>CS2 AWP</title>
+  <desc>Stilisierte grüne Gaming-Scharfschützenwaffe mit Zielfernrohr und Zielmarkierung.</desc>
+  <g stroke="#263e35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="64" cy="114" rx="48" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <g transform="rotate(-12 64 72)">
+      <path d="M15 67h32l8-8h28v14H62l-7 8H33l-12 15-11-2Z" fill="#7e9870"/>
+      <path d="M78 62h37v10H78Z" fill="#647d68"/>
+      <path d="M112 61h9v12h-9Z" fill="#a6b7a0"/>
+      <path d="M51 59V49m23 10V49" stroke-width="5"/>
+      <path d="M43 41h34v12H43Z" fill="#52685b"/>
+      <path d="M37 39h10v16H37Zm37-2h12v20H74Z" fill="#7c927e"/>
+      <path d="M49 78v18h12V78" fill="#495f53"/>
+      <path d="m84 75 8 22m-6-2h17" stroke-width="4"/>
+      <path d="M20 75h13m-14 7 8-1m40-14h8" stroke="#d0dabb" stroke-width="3"/>
+      <path d="M60 81h8q3 12-8 12" stroke-width="3"/>
+    </g>
+    <circle cx="103" cy="25" r="13" stroke="#d6a942" stroke-width="3"/>
+    <path d="M103 8v10m0 14v10M86 25h10m14 0h10" stroke="#d6a942" stroke-width="3"/>
+  </g>
+</svg>

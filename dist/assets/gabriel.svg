@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" fill="none">
+  <title>Gabriel mit dunklem Haar, kurzem Bart und Gaming-Headset</title>
+  <desc>Comicfigur nach der Fotovorlage: leicht gewelltes dunkelbraunes Haar, kräftige Brauen, kurzer Bart und ein dunkelblaues T-Shirt. Eine Hand wehrt das Abendessen ab.</desc>
+  <g id="gabriel-character" stroke="#253d34" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="171" cy="422" rx="126" ry="12" fill="#253d34" opacity=".1" stroke="none"/>
+    <path d="m145 246-39 17q-26 11-34 44l-12 43 39 17 21-31-5 92h130l-8-88 20 19 37-28-30-49q-12-20-45-31l-28-9Z" fill="#273243"/>
+    <path d="M145 257q24 27 52 1" stroke="#182b34" stroke-width="7"/>
+    <path d="m85 311 20 8m118-5 23-7m-121 107h103" stroke="#48515b" stroke-width="3"/>
+    <path d="M199 328h18v20h-18Z" fill="#e3b34d" stroke-width="2"/>
+    <path d="m203 335 10 2m-10 4 6 2" stroke="#b08a39" stroke-width="2"/>
+    <path d="m73 346-7 40q-3 20 17 26l53 11 9-27-39-17 7-18" fill="#e4b994"/>
+    <path d="m138 397 15 1 18-11q8-4 10 3 1 4-8 10l18-1q10 1 8 8-1 4-13 6l-17 10q-13 7-31-3Z" fill="#e4b994"/>
+    <path d="m262 329 10-47 25 2-4 42-17 26" fill="#e4b994"/>
+    <path d="m272 284-3-30-8-16q-3-8 3-10 6-2 13 9l4 7-3-39q-1-10 5-11 6-1 7 10l4 22 1-37q1-9 7-8 5 1 5 10l-1 36 6-29q3-9 8-7 5 2 2 11l-5 30 7-17q5-9 10-5 3 3-1 11l-11 33q-4 14-16 27Z" fill="#e4b994"/>
+    <path d="m284 245 19 4m-20 1q11 8 10 19m-157 138 12 4" stroke="#b78464" stroke-width="3"/>
+    <path d="M155 216v37q17 12 36 0l2-38Z" fill="#e4b994" stroke="none"/>
+    <path d="M125 133q-3-42 34-53 36-11 61 19 18 22 13 62l-5 34q-6 24-42 37-24-1-43-24l-19-37Z" fill="#e4b994"/>
+    <path d="m219 149 18 22q4 6-11 10" fill="#e4b994"/>
+    <path d="M132 166q-13-15-23-5-10 13 9 28l13 3" fill="#e4b994"/>
+    <path d="m118 171 7 7" stroke="#b78464" stroke-width="3"/>
+    <path d="M126 162q-12-14-10-37-8-13 2-27-1-16 17-20 4-18 23-13 13-13 29-2 18-8 28 7 19 0 23 19 15 10 5 28l-10 37-10-7-3-27q-11 9-18-4-12 7-21-6-6 13-17 5-1 17-15 13-1 17-17 20Z" fill="#45372f"/>
+    <path d="m133 102 8-11m8 19q16-1 18-17m10 12q14 3 15-9m12 16 10-5m-56-30 9 5m35-2 9 7" stroke="#6d5745" stroke-width="3"/>
+    <path d="m136 186 9 8q4 16 19 22 16 9 32 1 17-8 26-27l3-3-2 16q-12 22-38 27-24-1-40-18Z" fill="#665044" stroke="none"/>
+    <path d="m159 194 10-8 13 2 12-3 13 7-6 7-18-3-16 5Z" fill="#514035" stroke="none"/>
+    <path d="m164 204q18 10 35-2" stroke="#f5d5b5" stroke-width="4"/>
+    <path d="m150 209 2 3m7 4 3 2m12 4 3 1m15-2 3-2m11-6 3-3m8-10 2-3" stroke="#b18a69" stroke-width="2"/>
+    <path d="m153 150 16-4m18-1 18 3" stroke="#594638" stroke-width="7"/>
+    <path d="m156 163 10-2m26-1 10 2" stroke-width="3"/>
+    <path d="m162 162 1 5m34-5v5" stroke-width="4"/>
+    <path d="m183 166-3 14 9 1" stroke="#b78464" stroke-width="2.5"/>
+    <path d="m142 180 8 2" stroke="#d3987a" stroke-width="4"/>
+    <path d="M110 155q-10-61 33-85 46-22 80 18" stroke="#253d34" stroke-width="12"/>
+    <path d="M109 157q-9-3-13 5l-1 36q3 10 15 8l12-4-2-44Z" fill="#e3b34d"/>
+    <path d="M101 168v26" stroke="#f6f0df" stroke-width="4"/>
+    <path d="M120 191q15 9 34 8l11-3" stroke-width="3.5"/>
+    <rect x="160" y="191" width="18" height="9" rx="4.5" fill="#253d34" stroke="none"/>
+    <path d="m313 128 12-13m-4 36 20-3M72 224l-17-9m15 29-22 3" stroke="#e3b34d"/>
+  </g>
+</svg>

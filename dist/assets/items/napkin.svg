@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Gefaltete Serviette</title>
+  <desc>Weiße dreieckig gefaltete Serviette mit cremefarbener Faltkante und warmer goldener Saumnaht.</desc>
+  <ellipse cx="64" cy="115" rx="50" ry="7" fill="#263e35" opacity=".12"/>
+  <g stroke="#263e35" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m64 16 50 88-7 8H21l-7-8Z" fill="#e8d9b9"/>
+    <path d="m64 16 50 88H14Z" fill="#fffaf0"/>
+    <path d="m64 16 50 88H66Z" fill="#f0e6d0"/>
+    <path d="m66 104-2-68" stroke="#b5a78b" stroke-width="2.5"/>
+    <path d="m56 38-30 55h75" stroke="#d1a44d" stroke-width="3" stroke-dasharray="5 6"/>
+    <path d="M22 105h84" stroke="#c5af82" stroke-width="2.5"/>
+    <path d="m71 48 23 40" stroke="#fffaf0" stroke-width="3"/>
+  </g>
+</svg>

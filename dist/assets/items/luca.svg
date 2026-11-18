@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Luca</title>
+  <desc>Stilisierter Gaming-Buddy mit Headset und Controller, ohne konkrete Fotovorlage.</desc>
+  <g stroke="#263e35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="65" cy="117" rx="45" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <path d="M23 116 27 93q4-14 23-18h29q21 4 24 18l5 23Z" fill="#a69abf"/>
+    <path d="M52 66v14q12 14 25 0V65" fill="#e7bd98"/>
+    <path d="M36 37q1-24 28-24t28 24l-4 22Q84 79 65 79T40 59Z" fill="#e7bd98"/>
+    <path d="M37 45q-10-22 6-32 8-10 20-6 16-5 24 7 17 9 6 31l-9-6-3-13q-16 10-29 0l-4 14Z" fill="#66513f"/>
+    <path d="m51 45 6-1m17 0 6 1m-26 7v3m23-3v3" stroke-width="3"/>
+    <path d="m58 65 12 1" stroke-width="2.5"/>
+    <path d="M31 44q-4-30 22-36 24-7 42 17" stroke-width="7"/>
+    <path d="M28 42h10v22H28q-5-10 0-22Zm63 0h10v22H91Z" fill="#e5b64e"/>
+    <path d="m94 62-12 9H70" stroke-width="3"/>
+    <path d="M67 67h10v7H67Z" fill="#263e35" stroke="none"/>
+    <path d="m43 84 12 12 11-11 11 11 12-12" fill="#c5bbd7"/>
+    <path d="m40 96-5 12 14 3m39-15 7 12-15 3" fill="#e7bd98"/>
+    <path d="M49 96h29q10 0 13 11l2 8q-1 9-10 4l-10-5H55l-10 5q-9 5-10-4l2-8q3-11 12-11Z" fill="#f6f1e5"/>
+    <path d="M49 103v9m-5-5h10" stroke-width="3"/>
+    <circle cx="78" cy="104" r="2.5" fill="#d9523e" stroke="none"/>
+    <circle cx="84" cy="110" r="2.5" fill="#e5b64e" stroke="none"/>
+  </g>
+</svg>

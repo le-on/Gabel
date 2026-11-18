@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Bier-Sixpack im Pappträger</title>
+  <desc>Sechs braune Flaschen in zwei Reihen, mit goldenen Kronkorken und blauen Etiketten. Ein beigefarbener Pappträger mit Griff trägt die Zahl 6.</desc>
+  <g stroke="#263e35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="65" cy="117" rx="49" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <g fill="#875034">
+      <path d="M25 15h10v23l6 10v42H19V48l6-10Z"/>
+      <path d="M55 15h10v23l6 10v42H49V48l6-10Z"/>
+      <path d="M85 15h10v23l6 10v42H79V48l6-10Z"/>
+    </g>
+    <path d="M22 9h16v9H22Zm30 0h16v9H52Zm30 0h16v9H82Z" fill="#e5b64e" stroke-width="3"/>
+    <path d="M41 74V31q0-11 10-11h27q10 0 10 11v43H76V33H53v41Z" fill="#d4b482"/>
+    <path d="m49 27 28 0" stroke="#f7e8c5" stroke-width="3"/>
+    <g fill="#9a603b">
+      <path d="M31 37h10v20l7 11v30H24V68l7-11Z"/>
+      <path d="M60 37h10v20l7 11v30H53V68l7-11Z"/>
+      <path d="M89 37h10v20l7 11v30H82V68l7-11Z"/>
+    </g>
+    <path d="M28 31h16v9H28Zm29 0h16v9H57Zm29 0h16v9H86Z" fill="#e5b64e" stroke-width="3"/>
+    <path d="M24 69h24v19H24Zm29 0h24v19H53Zm29 0h24v19H82Z" fill="#a7d0dc" stroke-width="2.5"/>
+    <path d="m13 77 13-10 0 8h78v-8l12 10-6 36H20Z" fill="#c7a276"/>
+    <path d="m14 77 102 0-6 36H20Z" fill="#d4b482"/>
+    <path d="m24 83 4 22m79-22-4 22" stroke="#ad885b" stroke-width="2.5"/>
+    <rect x="51" y="83" width="28" height="25" rx="5" fill="#fffaf0" stroke-width="2.5"/>
+    <text x="65" y="103" text-anchor="middle" fill="#263e35" stroke="none" font-family="Georgia,serif" font-size="23" font-weight="bold">6</text>
+  </g>
+</svg>

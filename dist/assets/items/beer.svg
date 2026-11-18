@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Kühles Bier</title>
+  <desc>Braune Bierflasche mit hellblauem Etikett und goldenem Kronkorken.</desc>
+  <g stroke="#263e35" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="65" cy="117" rx="29" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <path d="M54 19h22v23q0 8 8 17l4 7v43q0 9-10 9H50q-10 0-10-9V66l4-7q10-10 10-17Z" fill="#875034"/>
+    <path d="M54 21h22v16H54Z" fill="#a96c43"/>
+    <path d="M49 14q15-5 31 0v9H49Z" fill="#e5b64e"/>
+    <path d="m55 13 1 10m8-11v10m9-9-1 10" stroke="#b88c36" stroke-width="2"/>
+    <path d="M40 73q23 9 48 0v29q-24 9-48 0Z" fill="#a7d0dc"/>
+    <path d="M48 80q16 5 32 0m-29 16q13 4 26 0" stroke="#fffaf0" stroke-width="3"/>
+    <circle cx="64" cy="89" r="7" fill="#fffaf0" stroke-width="2.5"/>
+    <path d="m62 85 6 8m-6-1 5-7" stroke="#e5b64e" stroke-width="2.5"/>
+    <path d="M49 59q-3 5-3 10m1 41h8" stroke="#bc8863" stroke-width="3"/>
+    <path d="m24 40 8 4m64-7-6 7m8 10 10-1" stroke="#e5b64e" stroke-width="3"/>
+  </g>
+</svg>

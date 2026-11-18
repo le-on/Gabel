@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Umut mit Lackierrolle und Voice-Chat</title>
+  <desc>Eine mintfarbene Malerrolle, ein Farbtropfen und eine kleine Gesprächsblase stehen für den Maler- und Lackiererfreund im Discord.</desc>
+  <g stroke="#263e35" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="64" cy="117" rx="47" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <path d="M91 36h17v25H67v22" fill="none"/>
+    <rect x="22" y="21" width="73" height="31" rx="8" fill="#79bdae"/>
+    <path d="M87 23v27" stroke="#3f9b8f" stroke-width="5"/>
+    <path d="M30 29h48m-48 7h37m-37 8h45" stroke="#c8e5ce" stroke-width="3"/>
+    <path d="m22 34-5 1v9q0 8 8 8" stroke-width="3"/>
+    <path d="M58 80h18v29q0 8-9 8t-9-8Z" fill="#e5b64e"/>
+    <path d="M63 89v17" stroke="#f8e3a7" stroke-width="3"/>
+    <path d="M24 64q-12 16-12 23 0 10 12 10t12-10q0-7-12-23Z" fill="#79bdae" stroke-width="3.5"/>
+    <path d="m20 86 1 4" stroke="#d3ebd3" stroke-width="3"/>
+    <path d="M88 78h20q10 0 10 10v12q0 10-10 10H98l-10 7v-8q-9-1-9-10V88q0-10 9-10Z" fill="#b6a8c4" stroke-width="3.5"/>
+    <path d="M89 89h18m-18 9h12" stroke="#fffaf0" stroke-width="3"/>
+    <path d="m15 15 5 3m82-7 7-3m-1 16 8-1" stroke="#e5b64e" stroke-width="3"/>
+  </g>
+</svg>

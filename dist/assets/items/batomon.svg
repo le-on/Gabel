@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Batomon Showdown</title>
+  <desc>Kleines violettes Comicmonster mit Flügeln, goldenen Hörnern und einem rotweißen Teamball.</desc>
+  <g stroke="#263e35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="64" cy="117" rx="47" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <path d="M34 58 9 44l5 25 17 13m51-25 27-15-6 28-17 13" fill="#a4b6a9"/>
+    <path d="m18 54 11 14m69-15-10 16" stroke="#6f947e" stroke-width="3"/>
+    <path d="M39 66q-11 15-8 35l-9 9q2 8 22 3l9-7 15 1 7 8q16 3 18-5l-8-11q3-23-11-34Z" fill="#a69ac3"/>
+    <path d="M51 80q17-5 20 11v15H48Z" fill="#f1dab2" stroke-width="3"/>
+    <path d="m34 36-4-21 18 12m23 0 18-12-4 24" fill="#e5b64e"/>
+    <path d="M30 42q0-21 27-22 30-1 31 25l-3 14q-5 18-27 17-25-1-29-18Z" fill="#a69ac3"/>
+    <path d="M38 43q8-6 15 1m13 0q8-6 15 0" stroke-width="3"/>
+    <path d="m45 48 1 7m27-7v7" stroke-width="4"/>
+    <path d="m51 63 13 2 8-3" stroke-width="3"/>
+    <path d="m54 64 2 5 4-4" fill="#fffaf0" stroke-width="2"/>
+    <path d="m23 92 10 3m49-4 9-4" stroke-width="4"/>
+    <circle cx="96" cy="98" r="21" fill="#fffaf0"/>
+    <path d="M75 97a21 21 0 0 1 42 0Z" fill="#d9523e"/>
+    <path d="M76 98h40"/>
+    <circle cx="96" cy="98" r="6" fill="#e5b64e" stroke-width="3"/>
+  </g>
+</svg>

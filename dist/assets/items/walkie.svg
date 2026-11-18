@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Gabriels und Leonies Walkie-Talkies</title>
+  <desc>Zwei Funkgeräte in Dunkelgrün und Lavendel mit Funkwellen verbinden Gabriel und Leonie auf derselben Straße.</desc>
+  <g stroke="#263e35" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="64" cy="117" rx="49" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <path d="M26 44V20m76 24V20" stroke-width="7"/>
+    <path d="M43 43v-7m42 7v-7" stroke-width="6"/>
+    <rect x="14" y="43" width="41" height="69" rx="9" fill="#3d5b51"/>
+    <rect x="73" y="43" width="41" height="69" rx="9" fill="#b6a8c4"/>
+    <rect x="22" y="53" width="25" height="17" rx="3" fill="#d6e4cd" stroke-width="3"/>
+    <rect x="81" y="53" width="25" height="17" rx="3" fill="#f6f1e5" stroke-width="3"/>
+    <path d="m28 59 4 4 8-5m47 1 4 4 8-5" stroke="#7a80b0" stroke-width="2.5"/>
+    <path d="M24 80h21m-21 7h21m-21 7h15m44-14h21m-21 7h21m-21 7h15" stroke-width="3"/>
+    <path d="M19 103h10m54 0h10" stroke="#e5b64e" stroke-width="3"/>
+    <circle cx="44" cy="102" r="3" fill="#e5b64e" stroke="none"/>
+    <circle cx="103" cy="102" r="3" fill="#e5b64e" stroke="none"/>
+    <path d="M52 15q12 12 0 24m23-24q-12 12 0 24" stroke="#7a80b0" stroke-width="3.5"/>
+    <path d="M59 21q6 6 0 12m9-12q-6 6 0 12" stroke="#c2b5d6" stroke-width="3"/>
+  </g>
+</svg>

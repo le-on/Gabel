@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Lanz &amp; Precht hören</title>
+  <desc>Zwei Mikrofone mit Gesprächsblasen unter einem goldbraunen Kopfhörer, ohne Personenporträts oder Markenlogo.</desc>
+  <g stroke="#263e35" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="64" cy="117" rx="46" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <path d="M18 65V54q0-39 46-39t46 39v11" stroke-width="8"/>
+    <path d="M23 52q0-31 41-31t41 31" stroke="#b88848" stroke-width="5"/>
+    <path d="M15 57h12v24H15q-8-10 0-24Zm86 0h12q8 14 0 24h-12Z" fill="#b88848"/>
+    <path d="M34 29h20q6 0 6 6v7q0 6-6 6h-7l-8 7v-7h-5q-6 0-6-6v-7q0-6 6-6Z" fill="#fffaf0" stroke-width="3"/>
+    <path d="M78 32h19q6 0 6 6v7q0 6-6 6h-5v7l-8-7h-6q-6 0-6-6v-7q0-6 6-6Z" fill="#e7c58e" stroke-width="3"/>
+    <path d="m37 38 14 0m30 4h13" stroke="#b88848" stroke-width="3"/>
+    <rect x="30" y="56" width="25" height="37" rx="12.5" fill="#ddbd92"/>
+    <rect x="74" y="58" width="25" height="37" rx="12.5" fill="#b7c5b1"/>
+    <path d="M24 77v8q0 15 18 15t19-15v-8m7 2v8q0 15 19 15t18-15v-8" stroke-width="3.5"/>
+    <path d="M42 101v10m45-8v8m-58 2h27m17 0h27" stroke-width="4"/>
+    <path d="m37 65 11 0m-11 8h11m-11 8h11m33-14h11m-11 8h11m-11 8h11" stroke="#fffaf0" stroke-width="3"/>
+  </g>
+</svg>

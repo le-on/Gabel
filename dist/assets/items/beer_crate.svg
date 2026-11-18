@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Bierkasten</title>
+  <desc>Ein voller goldbrauner Kasten mit braunen Bierflaschen und hellblauen Etiketten.</desc>
+  <g stroke="#263e35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="65" cy="116" rx="49" ry="7" fill="#263e35" opacity=".12" stroke="none"/>
+    <g fill="#875034">
+      <path d="M24 23h12v17l6 10v38H18V50l6-10Z"/>
+      <path d="M58 18h12v18l6 11v41H52V47l6-11Z"/>
+      <path d="M92 23h12v17l6 10v38H86V50l6-10Z"/>
+    </g>
+    <path d="M22 18h16v9H22Zm34-5h16v9H56Zm34 5h16v9H90Z" fill="#e5b64e"/>
+    <path d="M18 60h24v23H18Zm34-6h24v28H52Zm34 6h24v23H86Z" fill="#a7d0dc" stroke-width="3"/>
+    <path d="m12 71 15 7h73l16-7-4 39q-45 13-95 0Z" fill="#c89447"/>
+    <path d="M12 65h104v14H12Z" fill="#e5b64e"/>
+    <path d="M23 85v17m14-16v18m54-18v18m14-19v17" stroke="#9f743b" stroke-width="4"/>
+    <path d="M50 84h28v18H50Z" fill="#fffaf0" stroke-width="3"/>
+    <path d="m55 91 18 1m-16 5 14 1" stroke="#a7d0dc" stroke-width="3"/>
+    <path d="M22 107q42 10 83 0" stroke="#e7bf70" stroke-width="3"/>
+  </g>
+</svg>

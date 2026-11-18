@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#263e35">
+  <meta name="description" content="Gabel gegen Gänge: Gabriel alias Gabel wehrt Leonies Sechs-Gänge-Menü ab. Ein Roguelite-Autobattler mit null Appetit.">
+  <title>Gabel gegen Gänge</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script>
+  <script src="audio.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <button class="brand" id="home-button" aria-label="Gabel gegen Gänge – zur Startseite">
+      <span class="brand-icon" aria-hidden="true">g<span>✳</span></span>
+      <span>GABEL <small>GEGEN GÄNGE</small></span>
+    </button>
+    <div class="header-right">
+      <span class="header-note">HAUSGEMACHTES CHAOS.</span>
+      <button class="icon-button" id="sound-button" aria-label="Ton einschalten" aria-pressed="false" title="Ton einschalten">♪<span id="sound-label"> AUS</span></button>
+      <button class="icon-button" id="help-button" aria-label="Spielanleitung öffnen">?<span> ANLEITUNG</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="welcome" class="welcome">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="little-star">✳</span> EIN AUTOBATTLER FÜR ESSENSMUFFEL</div>
+          <h1>Gabel.<br>Gegen.<br><span>Gänge.</span></h1>
+          <p class="hero-description">Gabel im Namen. Keinen Bissen im Sinn.<br>Hilf Gabriel alias Gabel, Leonies liebevolles<br class="desktop-break"> Sechs-Gänge-Menü abzuwehren.</p>
+          <div class="hero-actions">
+            <button class="button primary" id="new-run-button">An den Tisch <span aria-hidden="true">↗</span></button>
+            <button class="button outline" id="continue-button" hidden>Versuch fortsetzen <span aria-hidden="true">→</span></button>
+          </div>
+          <p class="hero-footnote"><span class="status-dot"></span> 1 Spieler <span>·</span> 6 Gänge <span>·</span> Absolut kein Hunger</p>
+        </div>
+        <div class="hero-art">
+          <span class="art-caption">LEONIES KÜCHE · HEUTE ABEND</span>
+          <img src="assets/hero-kitchen.svg" alt="Gabriel wehrt sich mit Headset gegen das von Leonie servierte Abendessen." width="1200" height="500">
+          <div class="hero-stamp">MIT LIEBE<br><strong>GEKOCHT.</strong><span>LEIDER.</span></div>
+          <div class="speech-bubble">„Du musst doch<br>was essen!“<span>— Leonie, immer</span></div>
+        </div>
+      </div>
+      <div class="how-strip">
+        <div class="how-intro"><span class="eyebrow">DAS REZEPT ZUM ÜBERLEBEN</span><h2>Gut ausgerüstet.<br>Schlecht zu Tisch.</h2></div>
+        <div class="how-step"><span class="step-number">01</span><div><h3>Tisch decken.</h3><p>Sechs Plätze für Ausreden,<br>Gadgets und gute Kombinationen.</p></div></div>
+        <div class="how-step"><span class="step-number">02</span><div><h3>Essen abwehren.</h3><p>Deine Gegenstände kämpfen.<br>Du schaust dem Chaos zu.</p></div></div>
+        <div class="how-step"><span class="step-number">03</span><div><h3>Pfand klug investieren.</h3><p>Kaufe, kombiniere und spare.<br>Überlebe bis zum Dessert.</p></div></div>
+      </div>
+      <footer class="welcome-footer"><span>EIN KLEINES SPIEL MIT SEHR PERSÖNLICHEN AUSREDEN.</span><span id="record-label">GUTEN APPETIT. ODER EBEN NICHT.</span></footer>
+    </section>
+
+    <section id="game" class="game" data-screen="shop" hidden aria-label="Spielbereich">
+      <div class="run-heading">
+        <div><span class="eyebrow" id="run-eyebrow">VOR GANG 1</span><h1 id="screen-title" tabindex="-1">Pfandladen</h1></div>
+        <div class="course-track" id="course-track" aria-label="Fortschritt der sechs Gänge"></div>
+        <div class="run-vitals" id="prep-vitals" aria-label="Gabriels Willenskraft"><span aria-hidden="true">♥</span><strong id="prep-willpower">100</strong><small>WILLENSKRAFT</small></div>
+        <div class="wallet" id="run-wallet" aria-label="Dein Guthaben"><span class="coin-icon" aria-hidden="true">🪙</span><strong class="wallet-value" id="coins-value">12</strong><small>PFAND</small></div>
+        <button class="text-button" id="restart-button" aria-label="Neuen Versuch starten">↻ Neu</button>
+      </div>
+      <div class="round-recap" id="round-recap" hidden><span id="round-recap-text"></span><button class="text-button" id="report-toggle" aria-controls="report-dialog" aria-haspopup="dialog" aria-expanded="false">Auswertung ↗</button></div>
+      <section id="event-screen" class="game-screen" aria-labelledby="event-title" hidden>
+        <article class="event-panel">
+          <div class="event-topline"><span class="eyebrow">ZWISCHEN DEN GÄNGEN</span><span id="event-progress"></span></div>
+          <span id="event-icon" class="event-illustration" aria-hidden="true"></span>
+          <h2 id="event-title" tabindex="-1"></h2>
+          <p id="event-description"></p>
+          <blockquote id="event-quote"></blockquote>
+          <div id="event-choices" class="event-choices" role="group" aria-label="Deine Entscheidung"></div>
+          <p id="event-hint" role="status">Wähle eine Antwort. Danach geht es in den Shop.</p>
+        </article>
+      </section>
+      <section id="shop-screen" class="game-screen" aria-label="Shop und Vorbereitung">
+        <div id="shop-event-buffs" class="event-buffs" aria-label="Ereigniseffekt für den nächsten Gang" hidden></div>
+        <div class="prep-layout">
+          <section class="panel loadout-panel" id="loadout-panel" aria-labelledby="loadout-title">
+            <div class="panel-heading"><div class="prep-title"><img class="prep-avatar" src="assets/gabriel.svg" width="42" height="48" alt=""><div><h2 id="loadout-title">Dein Tisch</h2><span class="mini-label">6 PLÄTZE · NACHBARN KOMBINIEREN</span></div></div><p class="panel-description" id="placement-hint">Ziehen oder wählen, dann Zielplatz.</p></div>
+            <div id="bench-wrap" hidden><div class="subheading">BANK <span id="bench-count"></span></div><div id="bench" class="bench"></div><p id="bench-hint" class="bench-hint" role="status" hidden></p></div>
+            <div class="slots" id="slots" aria-label="Ausrüstungsplätze"></div>
+            <div class="sell-zone" id="sell-zone" role="group" aria-labelledby="sell-title">
+              <span class="sell-zone-icon" aria-hidden="true">↗</span>
+              <div class="sell-zone-copy"><strong id="sell-title" tabindex="-1">Verkaufen</strong><p id="sell-hint" aria-live="polite">Item auswählen oder hierher ziehen.</p></div>
+              <button class="sell-action" id="sell-button" aria-describedby="sell-hint" disabled>Item auswählen</button>
+            </div>
+          </section>
+          <aside class="prep-inspector" aria-label="Gegnerplan und Gegenstandsdetails">
+            <div class="formation-preview" id="formation-preview" aria-label="Angekündigte Gegnerformation"><div id="formation-overview"></div><details class="formation-more"><summary>Gegner &amp; Tipps</summary><div id="notebook-content"></div></details></div>
+            <div class="item-detail" id="item-detail" hidden></div>
+            <details class="loadout-synergies"><summary>Kombinationen <span id="synergy-count"></span></summary><div id="synergies" class="synergies"></div></details>
+          </aside>
+        </div>
+        <section class="shop-panel" id="shop-panel" aria-labelledby="shop-title">
+          <div class="shop-heading"><div><span class="eyebrow" id="shop-eyebrow">VOR GANG 1</span><h2 id="shop-title">Neue Ausreden</h2><span class="income-preview" id="income-preview">Nächster Sieg: +12 Pfand</span></div><p class="shop-summary" id="shop-summary" aria-live="polite" tabindex="-1">Kaufen, aufwerten, bereit machen.</p></div>
+          <div class="shop-offers" id="shop-offers" aria-label="Vier Shopangebote"></div>
+          <div class="shop-toolbar">
+            <button class="shop-service" id="reroll-button"><span aria-hidden="true">↻</span><span>Neu würfeln<small id="reroll-price">1 Pfandmünze</small></span></button>
+            <button class="shop-service" id="heal-button"><span aria-hidden="true">✚</span><span>Durchatmen<small id="heal-price">+15 Willenskraft · 4 Münzen</small></span></button>
+            <details class="shop-help"><summary>Shopregeln</summary><p>Reroll: 1 → 2 → 3 Münzen. Reservierte Angebote bleiben. Wähle ein Item zum direkten Aufwerten bis Stufe 3: Stufe 2 kostet einen Basiskaufpreis, Stufe 3 zwei. Zwei gleiche Stufen verschmelzen weiterhin automatisch. Siege bringen je nach Gang 12 bis 22 Pfand. Übrige Münzen bleiben erhalten. Zum Verkaufen ein Item auswählen und die Verkaufsleiste unter dem Tisch nutzen oder es direkt dorthin ziehen. Du erhältst die Hälfte der investierten Münzen zurück, abgerundet; Startausrüstung bringt 0 Pfand.</p></details>
+            <div class="shop-next"><button class="button primary" id="shop-serve-button">Gang 1 starten <span aria-hidden="true">→</span></button></div>
+          </div>
+        </section>
+      </section>
+      <section id="battle-screen" class="game-screen" aria-label="Kampf" hidden>
+<section class="arena-panel" aria-labelledby="course-name">
+          <div class="arena-heading"><div class="course-number" id="course-number">01<span>/ 06</span></div><div><span class="eyebrow" id="course-subtitle">DER ERSTE GANG</span><h2 id="course-name">Die Vorspeise</h2></div><div class="battle-controls"><button id="pause-button" class="small-control" aria-label="Kampf pausieren" disabled>Ⅱ</button><button id="speed-button" class="small-control" aria-label="Kampfgeschwindigkeit ändern">1×</button></div></div>
+          <div class="leonie-quote"><span aria-hidden="true">“</span><p id="leonie-quote">Ich hab nur eine Kleinigkeit gemacht.</p><small>LEONIE</small></div>
+          <div id="battle-event-buffs" class="event-buffs" aria-label="Aktiver Ereigniseffekt in diesem Gang" hidden></div>
+          <div class="battle-stage" id="battle-stage" role="group" aria-label="Spielfeld mit Tischgegenständen und anrückenden Gerichten">
+            <div class="kitchen-wall"><div class="shelf"><span>🪴</span><span>▤</span><span>☕</span></div><div class="wall-clock">◷</div></div>
+            <div class="table-edge"></div>
+            <div class="battle-lanes"><div></div><div></div><div></div></div>
+            <div class="character gabriel"><img src="assets/gabriel.svg" alt="" width="200" height="300"><span>GABRIEL</span></div>
+            <div class="character leonie"><img src="assets/leonie.svg" alt="" width="200" height="300"><span>LEONIE</span></div>
+            <div class="enemy-layer" id="enemy-layer"></div>
+            <div class="effect-layer" id="effect-layer" aria-hidden="true"></div>
+            <div class="table-loadout" id="table-loadout" role="group" aria-label="Deine sechs Gegenstände auf dem Tisch"></div>
+            <span class="table-loadout-label">DEINE TISCHVERTEIDIGUNG</span>
+            <div class="combat-fx-layer" id="combat-fx-layer" aria-hidden="true"></div>
+            <span class="mouth-guard-badge" id="mouth-guard-badge" role="status" hidden>Snus bereit</span>
+            <div class="chain-feed" id="chain-feed" aria-live="polite" aria-label="Ausgelöste Kombinationen"></div>
+            <div class="arena-message" id="arena-message"><span>✳</span><h3>Die Ruhe vor dem Gang.</h3><p>Deine Ausreden liegen bereit.</p></div>
+            <div class="paused-sticker" id="paused-sticker" hidden>ESSEN KANN WARTEN.<small>PAUSIERT</small></div>
+            <div class="arena-name-tag">TISCH 01 <span>BITTE NICHT FÜTTERN</span></div>
+          </div>
+          <div class="battle-hud">
+            <div class="willpower"><div class="meter-caption"><strong>Gabriels Willenskraft</strong><span id="willpower-value">100 / 100</span></div><div class="meter-track" role="progressbar" aria-label="Willenskraft" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="willpower-meter"><div id="willpower-fill"></div></div><span class="meter-note" id="willpower-note">Noch vollkommen überzeugt, dass er keinen Hunger hat.</span></div>
+            <div class="hud-stat"><span class="hud-symbol">◇</span><strong id="shield-value">0</strong><small>SCHILD</small></div>
+            <div class="hud-stat"><span class="hud-symbol">♧</span><strong id="defeated-value">0 / 0</strong><small>ABGEWEHRT</small></div>
+          </div>
+          <button class="button primary serve-button" id="serve-button">Ersten Gang servieren lassen <span aria-hidden="true">→</span></button>
+          <div class="combat-journal" id="combat-journal" aria-live="polite">Die Küche ist verdächtig ruhig.</div>
+        </section>
+      </section>
+      <div class="game-footer"><span><i class="status-dot"></i> <span id="save-status">Automatisch gespeichert.</span></span><span>LEONIE KOCHT. DU KOMBINIERST.</span></div>
+    </section>
+  </main>
+
+  <dialog id="help-dialog" class="dialog help-dialog">
+    <button class="dialog-close" data-close-dialog aria-label="Anleitung schließen">×</button>
+    <span class="eyebrow">DIE HAUSORDNUNG</span><h2>Sechs Gänge.<br>Kein Appetit.</h2>
+    <div class="audio-settings"><label for="sound-volume">Effektlautstärke</label><input id="sound-volume" type="range" min="0" max="100" step="5" value="45" aria-describedby="sound-volume-hint"><output id="sound-volume-value" for="sound-volume">45 %</output><p id="sound-volume-hint">Ton über ♪ oben einschalten.</p></div>
+    <p>Leonie hat gekocht. Wehre ihre Gerichte ab, bevor sie Gabriel erreichen. Jedes durchgekommene Gericht kostet Willenskraft. Bei null nimmt er einen Bissen – und der Versuch ist vorbei.</p>
+    <ol><li><strong>Kaufe deine Ausrüstung.</strong> Du startest mit Serviette, Paper und 12 Pfandmünzen. Vier Angebote kosten je nach Seltenheit 4, 6 oder 9 Münzen. Kaufe gezielt, bevor du den Gang startest.</li><li><strong>Nutze den Shop.</strong> Neue Angebote kosten zuerst 1, dann 2, danach je 3 Münzen pro Shopbesuch. Reservierte Angebote überstehen Rerolls und den nächsten Gang. Die Belohnung steigt von 12 Münzen nach Gang 1 bis 22 nach dem Finale. Durchatmen heilt einmal pro Shop bis zu 15 Willenskraft für 4 Münzen.</li><li><strong>Decke deinen Tisch.</strong> Tippe einen Gegenstand und danach seinen Zielplatz an. Belegte Plätze werden getauscht. Ordne deine Ausrüstung in der Shopansicht an. Am Desktop kannst du auch ziehen. Wähle einen Gegenstand aus, um ihn zum halben investierten Kaufpreis zu verkaufen; Startausrüstung hat keinen Verkaufswert.</li><li><strong>Kombiniere und verbessere.</strong> Direkte Nachbarn können Synergien aktivieren. Zwei gleiche Gegenstände derselben Stufe verschmelzen automatisch, auch auf der Fensterbank. Stufe 3 erreichst du mit vier Basiskopien oder über den Aufwerten-Knopf in den Itemdetails. Der Knopf zeigt Kosten und Ergebnis vorab.</li><li><strong>Entdecke deine Gegenstände.</strong> Hover oder Tabulatortaste zeigen Wirkung, aktuelle Stärke, Aufladezeit und aktive Kombinationen. Shopangebote zeigen auch das Ergebnis eines möglichen Kaufs. Auf dem Handy hilft die Detailanzeige nach dem Antippen.</li><li><strong>Überstehe das Menü.</strong> Deine Gegenstände arbeiten automatisch. Pausiere mit der Leertaste oder spiele bis zu 3× schneller. Es gibt keine kostenlose Heilung zwischen den Gängen. Das Dessert muss vollständig abgewehrt werden.</li></ol>
+    <p><strong>Plane gegen Leonies Formation.</strong> Im Shop zeigt dir der Gegnerplan, welche Gerichte und Sonderregeln kommen. Wähle AWP, Batomon, Desolator oder Luca auf dem Tisch aus und stelle eine ihrer zwei automatischen Taktiken ein. Im Kampf bleiben diese Einstellungen fest.</p>
+    <p><strong>Antworte auf Zwischenfälle.</strong> Nach Gang 2 und 4 erwartet dich jeweils eine zufällige persönliche Begegnung mit drei Antworten. Beide Ereignisse sind verschieden. Jede Antwort zeigt Kosten und Wirkung vorab. Geld und Willenskraft ändern sich sofort; Stärke, Aufladezeit und Start-Schild gelten nur für den nächsten Gang. Danach öffnet sich der Shop.</p>
+    <p><strong>Baue Auslöserketten.</strong> AWP-Abschüsse markierter Ziele beschleunigen benachbarte Lucas; ein Snus-Block lädt benachbartes Bier schneller auf. Bier stärkt den nächsten normalen Angriff benachbarter Gaming-Items. Luca wächst nach je drei eigenen oder benachbarten Gaming-Aktivierungen. Die Reaktionen lösen sich nicht gegenseitig aus. Nach jedem Gang kannst du die Auswertung über den gleichnamigen Knopf öffnen. Sie zeigt Schaden, überschüssigen Schaden, durchgekommene Gerichte und ausgelöste Ketten.</p>
+    <p><strong>Lies die Verbindungen.</strong> Goldene Sterne zeigen Stärke-Synergien, blaue Uhren kürzere Aufladezeiten. Bier schickt bernsteinfarbene Punkte, Luca violette Pfeile, Walkies gestrichelte Funksignale und Ritalin mintfarbene Blitze. Ein goldener Rahmen am Gaming-Item zeigt gespeicherten Bier-Fokus. Ausgelöste Ketten werden mit kräftigeren Verbindungen hervorgehoben.</p>
+    <p class="dialog-note">Volle Tischfläche? Neue Gegenstände warten auf der Fensterbank. Dein Fortschritt bleibt in diesem Browser gespeichert. Leertaste pausiert den Kampf, Escape schließt Dialoge.</p>
+    <button class="button primary" data-close-dialog>Alles klar. Keinen Hunger. <span>→</span></button>
+  </dialog>
+
+  <dialog id="report-dialog" class="dialog report-dialog" aria-labelledby="report-title">
+    <button class="dialog-close" id="report-close-button" data-close-dialog aria-label="Auswertung schließen">×</button>
+    <section class="battle-report-panel" id="battle-report-panel" aria-labelledby="report-title">
+      <div class="report-heading"><div><span class="eyebrow" id="report-eyebrow">NACH DEM GANG</span><h2 id="report-title">Kampfauswertung</h2></div></div>
+      <div id="report-body"></div>
+    </section>
+  </dialog>
+
+  <dialog id="result-dialog" class="dialog result-dialog">
+    <span class="result-illustration" id="result-icon" aria-hidden="true">✳</span>
+    <span class="eyebrow" id="result-eyebrow">KÜCHE GESCHLOSSEN</span><h2 id="result-title">Gabel gibt nicht nach.</h2><p id="result-description"></p>
+    <div class="result-stats" id="result-stats"></div>
+    <button class="button primary" id="play-again-button">Noch eine Runde <span>↗</span></button><button class="text-button" id="result-report-button">Kampfauswertung ansehen</button><button class="text-button" id="result-home-button">Zurück zum Küchentisch</button>
+  </dialog>
+  <dialog id="restart-dialog" class="dialog restart-dialog"><span class="eyebrow">FRISCH AUFGEDECKT</span><h2>Noch mal von vorn?</h2><p>Dein aktueller Versuch wird durch ein neues Menü ersetzt.</p><div class="dialog-actions"><button class="button outline" data-close-dialog>Weiter abwehren</button><button class="button primary" id="confirm-restart-button">Neuer Versuch ↗</button></div></dialog>
+  <div id="item-tooltip" class="item-tooltip" role="tooltip" hidden></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <noscript><p class="noscript">Gabriel braucht JavaScript, um das Abendessen abzuwehren. Bitte aktiviere es in deinem Browser.</p></noscript>
+</body>
+</html>

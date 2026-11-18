@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Ritalin-Tablettenblister</title>
+  <desc>Stilisierter Blister mit sechs hellen Tabletten, mintgrünen Akzenten und dunkler Kontur. Ohne Beschriftung oder Dosisangabe.</desc>
+  <ellipse cx="64" cy="117" rx="40" ry="6" fill="#263e35" opacity=".12"/>
+  <g transform="rotate(-7 64 64)" stroke="#263e35" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="26" y="13" width="76" height="100" rx="10" fill="#dce6dc"/>
+    <path d="M93 22v81" stroke="#77bca8" stroke-width="5"/>
+    <path d="M33 24v78m3-81 11-1m-11 88 12 1" stroke="#f6f1e5" stroke-width="3"/>
+    <g fill="#fffaf0" stroke-width="3">
+      <circle cx="47" cy="35" r="10"/>
+      <circle cx="79" cy="35" r="10"/>
+      <circle cx="47" cy="65" r="10"/>
+      <circle cx="79" cy="65" r="10"/>
+      <circle cx="47" cy="95" r="10"/>
+      <circle cx="79" cy="95" r="10"/>
+    </g>
+    <path d="m42 35 10 0m22 0h10m-42 30h10m22 0h10m-42 30h10m22 0h10" stroke="#77bca8" stroke-width="3"/>
+  </g>
+  <path d="m15 39 5 1m86-20 7-4m-4 19 8-1" stroke="#e5b64e" stroke-width="3" stroke-linecap="round"/>
+</svg>

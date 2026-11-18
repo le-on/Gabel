@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Ein einzelner Snusbeutel</title>
+  <desc>Ein weicher weißer Beutel mit vernähten Rändern und feiner Stoffstruktur, ohne Markenaufschrift.</desc>
+  <ellipse cx="65" cy="106" rx="44" ry="8" fill="#263e35" opacity=".12"/>
+  <g transform="rotate(-10 64 64)" stroke="#263e35" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 37q34-9 66-2l12 13q-8 20 0 38L93 98q-33-6-65 0L17 85q9-20 0-37Z" fill="#fffaf0"/>
+    <path d="M28 45q7 18 0 40m66-43q-6 19 2 43" stroke="#c4cdbd" stroke-width="3" stroke-dasharray="4 5"/>
+    <path d="M35 43q24-5 50-2m-49 50q24-4 49-1" stroke="#dfe6d8" stroke-width="3"/>
+    <path d="m40 57 2 0m11-5h2m13 4h2m12-3h2m-42 16h2m13-3h2m13 4h2m12-4h2m-42 15h2m13-2h2m13 3h2m11-5h2" stroke="#d3dccc" stroke-width="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Snus-10er-Pack</title>
+  <desc>Zehn blauweiße Dosen als hoch gebündelte Snusrolle mit mintfarbenen Haltebändern und gut lesbarer 10×-Kennzeichnung. Ohne Markenaufschrift.</desc>
+  <g stroke="#263e35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="63" cy="117" rx="48" ry="6" fill="#263e35" opacity=".12" stroke="none"/>
+    <path d="M24 26v78q0 13 33 13t33-13V26" fill="#dce9e7"/>
+    <path d="M24 35q33 16 66 0m-66 8q33 16 66 0m-66 8q33 16 66 0m-66 8q33 16 66 0m-66 8q33 16 66 0m-66 8q33 16 66 0m-66 8q33 16 66 0m-66 8q33 16 66 0m-66 8q33 16 66 0" stroke="#82b3c5" stroke-width="3"/>
+    <path d="M34 27v78m46-78v78" stroke="#b3d3c0" stroke-width="6"/>
+    <ellipse cx="57" cy="26" rx="33" ry="16" fill="#fffaf0"/>
+    <ellipse cx="57" cy="25" rx="24" ry="10" fill="#dce9e7" stroke="#82b3c5" stroke-width="2.5"/>
+    <path d="m42 24 7-4 8 4 8-4 8 4m-29 5 12-2 13 2" stroke="#6c9eae" stroke-width="2.5"/>
+    <circle cx="94" cy="84" r="25" fill="#fffaf0" stroke="#263e35" stroke-width="3.5"/>
+    <circle cx="94" cy="84" r="20" stroke="#82b3c5" stroke-width="2"/>
+    <text x="94" y="92" text-anchor="middle" fill="#263e35" stroke="none" font-family="Trebuchet MS,Arial,sans-serif" font-size="22" font-weight="bold" letter-spacing="-1">10×</text>
+  </g>
+</svg>
